@@ -3,7 +3,9 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Drawer from '@material-ui/core/Drawer';
+import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
@@ -146,16 +148,17 @@ export default function Dashboard() {
             SIEMENS SITE CONTROLS
           </Typography>
           <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
+            <Badge badgeContent={1} color="secondary">
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <Typography  variant="h6" color="inherit">
+          <Button className="logout-button">
+          <ExitToAppIcon></ExitToAppIcon>
           Logout
-          </Typography>
+          </Button>
         </Toolbar>
       </AppBar>
-      
+
       <Drawer
         variant="permanent"
         classes={{
