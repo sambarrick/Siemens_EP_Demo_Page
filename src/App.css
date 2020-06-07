@@ -5,3 +5,8 @@
 #appbar-background {
   background-color: rgb(0, 153, 153) !important;
 }
+
+/* Deposits.js */
+.monthly-savings-text {
+  color: rgb(24, 211, 24);
+}
