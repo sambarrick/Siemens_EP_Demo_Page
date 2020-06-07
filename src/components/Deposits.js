@@ -23,7 +23,7 @@ export default function Deposits() {
         $3,000,024.00
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
-        on 15 March, 2019
+      As of {new Date().toLocaleDateString()}
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>

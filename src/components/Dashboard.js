@@ -28,7 +28,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Siemens Industry Inc, 2014 All rights reserved
+        Siemens Industry Inc. All rights reserved
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -150,11 +150,12 @@ export default function Dashboard() {
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <Typography component="h4" variant="h6" color="inherit">
-          LOGOUT
+          <Typography  variant="h6" color="inherit">
+          Logout
           </Typography>
         </Toolbar>
       </AppBar>
+      
       <Drawer
         variant="permanent"
         classes={{
