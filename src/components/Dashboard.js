@@ -24,6 +24,7 @@ import { mainListItems, secondaryListItems } from './listitems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
+import InteractiveMap from './InteractiveMap'
 
 function Copyright() {
   return (
@@ -179,6 +180,16 @@ export default function Dashboard() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
+        
+        <Grid classname="interactive-map-container" container spacing={3}>
+        {/* InteractiveMap */}
+        <Grid item xs={12} md={12} lg={12}>
+         
+            <InteractiveMap />
+          
+        </Grid>
+        </Grid>
+
           <Grid container spacing={3}>
             {/* Chart */}
             <Grid item xs={12} md={8} lg={9}>
