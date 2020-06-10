@@ -16,3 +16,11 @@
 .monthly-savings-text {
   color: rgb(19, 191, 19);
 }
+
+/* InteractiveMap.js */
+
+
+.map{
+  height: 100vh;
+  width: 100vh;
+}
