@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import { Typography, Divider } from '@material-ui/core';
 import Title from './Title';
 
 function preventDefault(event) {
@@ -19,12 +19,13 @@ export default function Deposits() {
   return (
     <React.Fragment>
       <Title>Monthly Savings</Title>
-      <Typography component="p" variant="h4" className="monthly-savings-text">
+      <Typography component="p" variant="h5" id="title-box" className="monthly-savings-text">
         $3,000,024.00
       </Typography>
-      <Typography color="textSecondary" className={classes.depositContext}>
-      As of {new Date().toLocaleDateString()}
-      </Typography>
+      <Divider />
+      <h5>Based on data as of {new Date().toLocaleDateString()}</h5>
+    
+      
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
           View balance

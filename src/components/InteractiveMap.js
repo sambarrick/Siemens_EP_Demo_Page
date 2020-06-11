@@ -28,7 +28,7 @@ class InteractiveMap extends Component {
       lat: 30.2698,
       lng: -97.7431
     },
-    zoom: 5,
+    zoom: 3.4,
   }
 
   greenIcon = L.icon({
@@ -73,6 +73,11 @@ class InteractiveMap extends Component {
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+        <Marker position={positionGreenIcon} icon={myIcon}>
+          <Popup>
+            Customer Site Name Here
+          </Popup>
+        </Marker>
         <Marker position={positionGreenIcon} icon={this.greenIcon}>
           <Popup>
             Customer Site Name Here

@@ -25,6 +25,7 @@ import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
 import InteractiveMap from './InteractiveMap'
+import EnergyIntensity from './EnergyIntensity'
 
 function Copyright() {
   return (
@@ -207,6 +208,11 @@ export default function Dashboard() {
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Orders />
+              </Paper>
+            </Grid>
+            <Grid item xs={12} md={12} lg={12}>
+              <Paper className={classes.paper}>
+                <EnergyIntensity />
               </Paper>
             </Grid>
           </Grid>
