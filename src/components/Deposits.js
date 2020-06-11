@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Divider } from '@material-ui/core';
+import { Typography, Divider, Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
 import Title from './Title';
 
 function preventDefault(event) {
@@ -18,11 +18,13 @@ export default function Deposits() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Monthly Savings</Title>
+      <Title className="monthly-savings-title">Monthly Savings</Title>
       <Typography component="p" variant="h5" id="title-box" className="monthly-savings-text">
         $3,000,024.00
       </Typography>
       <Divider />
+      <p>Users: <span className="green-span-text">368</span></p>
+
       <h5>Based on data as of {new Date().toLocaleDateString()}</h5>
     
       

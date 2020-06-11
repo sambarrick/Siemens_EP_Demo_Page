@@ -73,7 +73,7 @@ class InteractiveMap extends Component {
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={positionGreenIcon} icon={myIcon}>
+        <Marker position={positionGreenIcon} icon={myIcon} onclick={this.zoom2}>
           <Popup>
             Customer Site Name Here
           </Popup>

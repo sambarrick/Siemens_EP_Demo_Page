@@ -13,9 +13,13 @@
 }
 
 /* Deposits.js */
+
 .monthly-savings-text {
   color: rgb(19, 191, 19);
-  text-align: left;
+}
+
+.green-span-text {
+  color: rgb(19, 191, 19);
 }
 
 /* InteractiveMap.js */
