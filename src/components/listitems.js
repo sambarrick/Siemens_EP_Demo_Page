@@ -8,9 +8,10 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import PeopleIcon from '@material-ui/icons/People';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import BarChartIcon from '@material-ui/icons/BarChart';
-import LayersIcon from '@material-ui/icons/Layers';
-import AssignmentIcon from '@material-ui/icons/Assignment';
 import NoteIcon from '@material-ui/icons/Note';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import SettingsIcon from '@material-ui/icons/Settings';
 
 export const mainListItems = (
   <div>
@@ -65,24 +66,33 @@ export const mainListItems = (
 
 export const secondaryListItems = (
   <div>
-    <ListSubheader inset>Saved reports</ListSubheader>
+   
     <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Current month" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Last quarter" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Year-end sale" />
-    </ListItem>
+    <Tooltip title="My Account">
+    <ListItemIcon>
+      <AccountBoxIcon/>
+    </ListItemIcon>
+    </Tooltip>
+    <ListItemText primary="My Account" />
+  </ListItem>
+
+  <ListItem button>
+  <Tooltip title="Settings">
+    <ListItemIcon>
+      <SettingsIcon />
+    </ListItemIcon>
+    </Tooltip>
+    <ListItemText primary="Settings" />
+  </ListItem>
+
+  <ListItem button>
+  <Tooltip title="Logout">
+    <ListItemIcon>
+      <ExitToAppIcon />
+    </ListItemIcon>
+    </Tooltip>
+    <ListItemText primary="Logout" />
+  </ListItem>
+
   </div>
 );

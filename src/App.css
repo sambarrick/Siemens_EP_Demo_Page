@@ -22,6 +22,19 @@
   color: rgb(19, 191, 19);
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* InteractiveMap.js */
 
 .map{
@@ -33,3 +46,4 @@
   padding: 0px !important;
   margin: 0px !important;
 }
+
