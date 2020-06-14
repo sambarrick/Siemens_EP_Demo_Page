@@ -154,10 +154,7 @@ export default function Dashboard() {
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <Button className="logout-button">
-          <ExitToAppIcon></ExitToAppIcon>
-          Logout
-          </Button>
+          
         </Toolbar>
       </AppBar>
 

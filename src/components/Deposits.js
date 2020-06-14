@@ -37,9 +37,6 @@ export default function Deposits() {
           $3,000,024.00
         </Typography>
         <Divider />
-        <p>
-          Users: <span className="green-span-text">368</span>
-        </p>
         <div class="row">
           <div class="column">
             <h5>
@@ -56,13 +53,28 @@ export default function Deposits() {
               Column 3: <span className="green-span-text">Ipsum</span>
             </h5>
           </div>
+          <div class="column">
+            <h5>
+              Column 4: <span className="green-span-text">Ipsum</span>
+            </h5>
+          </div>
+          <div class="column">
+            <h5>
+              Column 5: <span className="green-span-text">Ipsum</span>
+            </h5>
+          </div>
+          <div class="column">
+            <h5>
+              Column 6: <span className="green-span-text">Ipsum</span>
+            </h5>
+          </div>
         </div>
         <h5>Based on data as of {new Date().toLocaleDateString()}</h5>
       </div>
 
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
-          View balance
+          View advanced metrics
         </Link>
       </div>
     </React.Fragment>
