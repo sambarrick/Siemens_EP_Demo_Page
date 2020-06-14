@@ -29,7 +29,7 @@ const EnergyIntensity = () => {
       </Table>
       <div className={classes.seeMore}>
         <Link color="primary" href="#" onClick={preventDefault}>
-          See more sites
+          View more sites
         </Link>
       </div>
     </React.Fragment>
